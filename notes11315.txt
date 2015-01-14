@@ -19,3 +19,4 @@ Homework:
 https://github.com/wdi-sf-jan/bootstrap_lab
 do moc 1 & 2, 3 if I feel like it.
 Has no JS or jquery
+echo anyone >> notes11315.txt
