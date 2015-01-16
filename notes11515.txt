@@ -61,12 +61,36 @@ I asked if the webkit animations are based of of java, they are not
 interacting with the html needs to use somethign like = document.getElementsByTagName("li");
 							this targets all the li items on the page.
 
-.adEventListener - common events;	 click, mousedown, and mouseUp
+.adEventListener - common events;	click, mousedown, and mouseUp
 					mouseover, mouseout, and mouseMove
 					keydown, keyPress, keyUp
 					sumbit, loamouseover, mouseout, and mouseMove
 					keydown, keyPress, keyUp
 					sumbit, load
 event.target.***.*** when located with in a function with erfere to the item that caused the event;
+
+
+2 options 	placing the cript at the bottom of the page, not the bst method
+		window.addEventLister or using a window.onLoad and a create a new function that intializes
+		on window.onload - which causes the function to wait for the DOM to load properly before executing the following code
+
+window.onload = initialize;
+
+var initialize = function () {
+	console.log("It's loading");
+	changeGreeting();
+	listItems();
+	document.getElementById("greeting").innerHTML = "Hello, Planet Earth!";
+});
+
+window.addEventListener("load", function () { 
+	add functions to load here
+	etc etc etc etc etct etc 
+ }
+
+
+
+
+		
 
 
