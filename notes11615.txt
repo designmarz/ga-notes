@@ -1,0 +1,26 @@
+
+GA WDI Notes 1-1-6-15
+
+
+		When selecting .getElementsByTagName(""); 
+			this creates an array like object, 
+			with some of the funcality missing form you normal array objects
+
+
+					the attribut of class 
+anything inside a	 tag	class  /the css selector name/
+			<li     class= "someCSSclass">some item</li>
+TIM notes:
+	events: click, mousedown, mouseup
+		
+		summit = used for form and such,
+			may trigger url reload unless also using a preventDefault tag somewhere
+
+
+the code below //// SomeDefinedVar.preventDefualt(event) /////
+	-----------------------------------
+	var alertInput = function(event) {
+		alert(former.term.value);
+		event.perventDefualt();
+	-----------------------------------
+

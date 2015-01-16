@@ -1,0 +1,12 @@
+
+GA WDI Notes 1-1-6-15
+
+
+		When selecting .getElementsByTagName(""); 
+			this creates an array like object, 
+			with some of the funcality missing form you normal array objects
+
+
+					the attribut of class 
+anything inside a	 tag	class  /the css selector name/
+			<li     class= "someCSSclass">some item</li>
