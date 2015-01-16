@@ -64,13 +64,13 @@ interacting with the html needs to use somethign like = document.getElementsByTa
 .adEventListener - common events;	click, mousedown, and mouseUp
 					mouseover, mouseout, and mouseMove
 					keydown, keyPress, keyUp
-					sumbit, loamouseover, mouseout, and mouseMove
+					sumbit, mouseover, mouseout, and mouseMove
 					keydown, keyPress, keyUp
 					sumbit, load
 event.target.***.*** when located with in a function with erfere to the item that caused the event;
 
 
-2 options 	placing the cript at the bottom of the page, not the bst method
+2 options 	placing the script at the bottom of the page, not the bst method
 		window.addEventLister or using a window.onLoad and a create a new function that intializes
 		on window.onload - which causes the function to wait for the DOM to load properly before executing the following code
 
@@ -85,12 +85,7 @@ var initialize = function () {
 
 window.addEventListener("load", function () { 
 	add functions to load here
-	etc etc etc etc etct etc 
+	etc etc etc etc etct etc
  }
-
-
-
-
-		
 
 
