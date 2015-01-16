@@ -1,0 +1,72 @@
+GA Notes 1-15-15
+git push 
+
+git pull 
+git remote add origin some_url
+
+
+git remote add upstream some_url
+	to clone some code as an upstream
+git pull upstream master
+	pulls new code form a updated repo
+	git pull will overwrite any files that you ohave not commit'd, 
+if they have the same name.
+
+installing  software using npm, needs sudo to install globally - the -g makes it global
+
+a method is a function that requiers a object, i.e.  sumFunction(a, b);
+					--- this needs a & b to be entered to correctly execute.
+pop:		removes the last item in an array and returns it to you, permently removing it form the array
+push: 		adds an item to the last posistion in an array
+
+shift: 		removes the first item in an array and returns that value to you, permently removing it from the array
+unshift:  	adds an item to the beginning of an array 
+
+
+indexOf(a); 	will return the index (starting with 0) of the inputed argument, if the agument is not present 	
+		than it will return a -1, which can than be used to pass or fail a check it something is in an
+		array or note
+
+a = 4		this would make a now equal 4, used in decaring varibles.
+
+4 == "4" 	would return TRUE, as it will coerce (coercion); the "4" to a #4 
+		and than check those values (it will not change that "4");
+4 === "4"	Would return false, as the type of the value is not the same, a string and a integer can not be the same.	
+
+callbacks:	is a function passed to another function. below is an example:
+
+		function add(a, b)  {return a + b;};	
+		function sub(a, b ) {return a - b;};
+		function mul(a, b)  {return a * b;};
+		function div(a, b)  {return a / b;};
+		function miniMath (a, b, callback) {return callback(a, b);};
+
+
+
+		miniMath(2, 2, add)
+		4
+		miniMath(2, 2, sub)
+		0
+		miniMath(2, 2, div)
+		1
+		miniMath(2, 2, mul)
+		4
+
+Afternoon notes:
+	DOM - document object model	
+	this is where you source html is put after processing, 
+	and where javascript interacts with your web page.
+I asked if the webkit animations are based of of java, they are not
+
+interacting with the html needs to use somethign like = document.getElementsByTagName("li");
+							this targets all the li items on the page.
+
+.adEventListener - common events;	 click, mousedown, and mouseUp
+					mouseover, mouseout, and mouseMove
+					keydown, keyPress, keyUp
+					sumbit, loamouseover, mouseout, and mouseMove
+					keydown, keyPress, keyUp
+					sumbit, load
+event.target.***.*** when located with in a function with erfere to the item that caused the event;
+
+
