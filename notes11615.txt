@@ -23,4 +23,51 @@ the code below //// SomeDefinedVar.preventDefualt(event) /////
 		alert(former.term.value);
 		event.perventDefualt();
 	-----------------------------------
+git config -- global user.name "yourname"
+git config -- global user.email "youreamiler@blah.com"
+
+SUBLIME NOTES:
+
+in sublime shoft+command+p brings up the sublime console to set syntax, install etc..
+emmet shortcuts like (div>ul>li*#) will create a new div with an ul and with 3 li's in that
+
+type 'for' and the tab one of the options for a completes for loop, with the varibls highlighted for easy renaming
+
+
+after writing a snippet for sublime need ot save  as a *.sublime-snippet file type
+
+
+if you need to remove the a dir from being a git repo, i.e. made your desktop as a repo
+							    rm rf -- .git
+
+
+Intro to GA outcomes program:
+			Denise Hall 	& 	Renee Franzwa	&	Virginia Dolen
+			Career Coach		Business Dev Lead	Outcomes Producer
+			denise@ga.com		reneef@ga.com		virginia@ga.com
+			worked at the		worked at standford	produces the meet & hire etc..
+			art institute								
+			Vitiman T &
+			Creative Circle
+
+What is Outcomes:	Matchng our results with a job we want, not just a "job"
+			Outcomes provids graduates of our immersive programs with job readiness training
+			
+who's hired us"
+Apple - Udemy - Marketo - Macy's - Tripit - Uber - Pivitol Labs
+
+AKQA - Time Inc. - CondeNest -
+
+Outcomes programming:
+
+
+
+
+		
+
+
+ga.co/talent
+
+
+
 

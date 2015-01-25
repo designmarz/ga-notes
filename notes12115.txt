@@ -1,0 +1,55 @@
+Morning notes 1-21-15
+							remember to always have enough returns to pass valus back to the original function. 
+							Otherwise you may get a undefined value
+
+
+	Questions asked:
+	1. some & each
+		Some will stop the first time a value returns true.
+		each with interate of all of the values	
+	
+	2. step by step
+	3. map vs each
+	4.  Math.round(sqrt) == Math.sqrt(77) using to compare floating numbers to a rounder number, and check if 
+
+
+Object Oriented Programming:
+	constructor function = blueprint to create a bunch of new objects, with the same 'keys'
+	
+
+		// these are properties //	
+function People(name, age, favFood){
+	this.name = name;  //this.name is a property, = name is the array item
+	this.age  = age;  // this.age refers to the function that called it
+	this.favFood = favFood;
+}
+
+
+AfterNoon Notes:
+
+		Chia is na expectation libary that works with Mocha's testing library:
+
+	Testing: TDD describe what your code is going to do, i.e. thsi function will do this and I expect this
+			start with failing, and write the minimum code to pass the test
+
+
+
+// defines new CLASS, call Vehicle, used for repeatabilty, and reusing the parameters that you defined //
+function Vehicle(model, year) {
+	this.model = model;
+	this.year = year;
+}
+
+//accessible function for the CLASS of Vehicle //
+Vehicle.prototype.honk	= function(){
+alert("BEEP!");
+};
+// defines new CLASS, called Car //
+function Car(model, year){
+	this.model = model;
+	this.year = year;
+}
+// this is prototype inheritance, this will pass along all the prototype's to car from the vehicle CLASS //
+Car.prototype = new Vehicle();
+
+

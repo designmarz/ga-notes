@@ -1,0 +1,30 @@
+WEEK 2 Review:
+
+TDD: 	
+	Helps you focus on your probleme area's
+	Being able to pass along clear information along to other groups
+
+SETUP 				-	 EXERCISE 				- 			VERIFY
+initalize your need varibles		Run code to check a function/method etc.			
+
+
+reading the test carefully to check for the needed varibiles and functions / syntax
+
+Interator:
+
+	An interator is a function that knows how to access items form a collection one at a time,
+	while keeping track of it's current posistion within that sequence.
+	
+
+can you setAttribut with change class?
+
+
+
+Questions: 
+
+	1. why using (1) var keyword, and then using commas to declare multiple functions in a row;
+		matter of prefrence
+
+	2. Why is th racetrack() function empty in the provided example
+
+	3. 

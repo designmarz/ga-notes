@@ -1,0 +1,9 @@
+Morning Notes:
+	hard coding an array into a constructor function, will create & take up memory locations
+JavaScript the good Parts: Douglas Crockford
+
+
+
+
+
+

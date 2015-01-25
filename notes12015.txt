@@ -1,0 +1,76 @@
+
+Morning Objects: By Alex
+	Understand the philosophy/ "the why" of testing
+	
+	See how codewars test your code/problem solution
+
+	Set up your JS test environment
+
+
+TDD = Test Driven Development
+
+	Begin by writing a failing test
+		write code to pass the test
+		refactor code to be clear and concise, for easy updatable code
+
+
+TDD requires you to clarify you objecvtives & overall requirements
+
+
+
+module.exports; sort of take the code we wrote so that it's availible in our TDD envirn
+
+
+describe() = just wraps you content & text together and what will show up
+it() = the check function that passes or fails the test, show's in green if passed, red if failed
+
+
+Afternoon: by Tim - functional programming
+
+		iterators are helper methods to use instead of FOR loops
+		
+	forEach	: Instead of using a 'FOR' loop to go through and do somethign, 
+		  no counters needed, just does on each element that it's passed
+
+		  var friends =["Peter", "Tim", "Alex", "Myla", "Elie"]
+	          friends.forEach(function(buddy){ console.log("Hello, " + buddy + "!"); 
+				This would log to the console, "Hello, someFriend!"
+
+	map	: this returnd a new array based on what you did in the body of the function
+		  allows us to run though an array and declare some functions and create a new array with that info
+
+	filter	: this "filters" or removes items form an array and outputs a new array with whats left;
+		  this leave the old array intact, and creats a new array:
+		
+	
+	reduce	:
+	some	:
+	every	:
+
+SquadLeader: 
+Methods
+Interators
+
+
+need to cover
+the writing of the TDD
+need a big break with Tim;
+
+
+to much time on the code walk throughs: maybe th ability to look over the code by pre-selecting people to prezentation
+before hand, and not randomly 
+
+fridays shorter reviews, people are itchin to work on the weekend project
+
+maybe mini exercises each night on what will be worked on the next day, to help drive the lecture
+
+
+
+
+	
+
+
+
+
+
+
