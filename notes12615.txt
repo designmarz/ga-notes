@@ -1,0 +1,6 @@
+Monday Morning Note:
+
+
+.bind   
+object oriented "magic"
+
