@@ -1,0 +1,9 @@
+1-27-15 
+
+Forms: Ask about dynamicly chaning a inout tag from password to text and how that deals with security
+
+
+Mornining Notes: jQuery!
+
+		
+

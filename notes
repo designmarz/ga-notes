@@ -1,0 +1,53 @@
+02/11 Objectives: 
+	Build a larger Web App with all the core verbs -- CRUD
+	Creat	-	 Post
+	Read	-	 Get
+	Update	-	 Put
+	Destroy	-	 Delete
+
+
+-----------Embedded Ruby-----------
+
+ERB: similar to handles bars, allowing you to insert (as plain text) ruby code 
+	All ERB files need to be in a dir 'views'
+	do not need to require or refrence file in the head
+	varibles need to be in @instance version
+
+-----------------------------------------------------------
+
+-----RUBY FILE------
+get '/:name' do 
+	@instance = ['Example', 'Example 2', 'Example 3']
+	erb: students
+end
+--------------------
+the above is the logic
+
+------ERB FILE ------
+<% @instance.someMethod do |singleVarilble| %>
+<li><%= singleVarible %></li>
+<% end %>
+--------------------
+taskes logic and returns HTML
+-----------------------------------------------------------
+	no need to include the .erb file extension in the ruby file
+	In order for the data tobe shared between diffrent fiels need to be instances 
+
+	%Q = encloses the () with BIG quotes
+	%q = enclose the () with SIGNLE quotes
+	%w - returns an array of stings
+
+when you include a = sign, i.e.  <%= IsEvaluatedAndInsertedIntoThePage  %>
+				 <% @SomeRubyCode %>
+
+RST:
+Representational
+State
+Transfer
+
+Method override
+<input type="hidden" name="_method" value="put">
+
+This will override a post and force the server to say "nope not a post, it's a put"
+
+

@@ -1,0 +1,6 @@
+one-way encryption: only I have the hash & salt
+two-way encryption: easy example, using SSH keys with gitHub
+
+b-crypt:
+
+
