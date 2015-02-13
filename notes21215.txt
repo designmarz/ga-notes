@@ -1,0 +1,84 @@
+
+my psql
+	INSERT
+	SELECT
+	UPDATE
+	DELETE
+
+
+CREAT DATATBASE *insert name*
+
+connecting to a datbase, use \c *nameOfDataBass*
+
+
+CREATE TABLE *tableName*(id SERIAL PRIMARY KEY)   specifies the most important column, most likely the ID.
+
+VARCHAR(someLimit####) * a varible amount of characters
+
+Table example:
+CREATE DATABASE learnsql;
+
+CREATE TABLE students(id SERIAL PRIMARY KEY, name VARCHAR(50), age INTEGER);
+
+SELECT * FROM "students"; to display the table
+
+
+INSERT INTO students (name, age) VALUES ('bobo', 99);
+
+
+learnsql=# SELECT * FROM "students" WHERE name='Nick' AND age='31';
+ id | name | age 
+----+------+-----
+  1 | Nick |  31
+(1 row)
+
+SELECT * FROM "students" ORDER BY name DESC;
+SELECT * FROM "students" ORDER BY name ASC;
+
+
+SELECT * FROM "students" ORDER BY id;
+
+learnsql=# SELECT * FROM students WHERE name='Pete' or name='bobo';
+ id | name | age 
+----+------+-----
+  2 | Pete |  17
+  5 | bobo |  40
+(2 rows)
+
+BETTER WAY _____---------_____
+
+learnsql=# SELECT * FROM students WHERE name IN ('Pete', 'bobo');
+ id | name | age 
+----+------+-----
+  2 | Pete |  17
+  5 | bobo |  40
+(2 rows)
+
+
+DROP TABLE someYTableName; 
+to delete a table
+
+
+learnsql=# SELECT * FROM students WHERE name NOT IN ('Pete', 'bobo');
+ id |  name  | age 
+----+--------+-----
+  3 | WIll   |  27
+  1 | Jeddie |  31
+  4 | Bobo   |  99
+(3 rows)
+
+---------------------------------------------------
+
+Set returned results limited by someNumber (1 in this case)
+
+	 SELECT * FROM students LIMIT 1;
+
+Set returned results limited by someNumber, and offseted from the start to display slightly diffrent results
+
+	SELECT * FROM students LIMIT 1 OFFSET 2;
+ id |  name  | age 
+----+--------+-----
+  1 | Jeddie |  31
+(1 row)
+
+
