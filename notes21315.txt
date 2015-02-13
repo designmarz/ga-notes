@@ -1,0 +1,47 @@
+		RESTFUL ROUTING
+GET (http verb) 
+
+	GET '/authors' => index.erb
+
+	GET '/authors/:id' => show.erb
+
+	GET '/authors/:id/edit' => edit.erb
+
+	GET '/authors/new' => new.erb
+
+			redirects => '/authors'
+
+
+	POST  => '/authors'
+
+	PUT  => '/authors'
+
+	DELETE  => '/authors'
+
+
+<form action ='/authors/2' method='POST'>
+	<input type='hidden' method=''>
+
+
+TO start postSQL APP MUST BE RUNNING
+	createdb sinatrasql
+	psql -d sinatrasql
+
+
+STEP TO FIRST APP
+
+creat a table in psql:
+	CREATE TABLE authors (id SERIAL PRIMARY KEY, name VARCHAR(100));
+
+set RUBY files:
+
+	desktop  mkdir sinatrasql
+	desktop  cd sinatrasql 
+
+	sinatrasql  touch app.rb
+	sinatrasql  mkdir views && mkdir public
+	sinatrasql  touch views/index.erb
+	sinatrasql  touch views/show.erb
+	sinatrasql  touch views/edit.erb
+	sinatrasql  touch views/new.erb 
+
