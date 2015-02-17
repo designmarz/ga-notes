@@ -82,3 +82,10 @@ Set returned results limited by someNumber, and offseted from the start to displ
 (1 row)
 
 
+
+
+HOW TO RENAME A COLUMN:
+ALTER TABLE students  RENAME COLUMN  name TO squad_name;
+
+
+INSERT INTO students (squad_name, student_name, age, spirit_animal) VALUES ('someGretaName', 'Nick Marazz', 31, 'Dolphin');
