@@ -1,0 +1,176 @@
+Notes 2-19-15
+
+	       Artist      ORM / ActiveRecord
+		  \	  /
+		   \     /
+	    RUBY    \   /           POSTGRESQL
+	-----------------	-----------------
+	|	     | ||	|		|
+	|   	     | ||------>|		|
+	| Sinatra    | ||	|               |
+	|	     | ||	|               |
+	| 	     | ||<------|               |
+	|	     | ||	|               |
+	|	     | ||	|               |
+	-----------------	-----------------   Relational
+		\			/
+		 \		       /
+	       Objects	          Relational
+		   \		     /
+		    \----       ----/
+		  	 \     /
+		   	  \   /
+	
+	-T for no test folder
+	-B for no bundle install
+	d and the name type of your database
+
+RAILS SETUP
+1------ rails new YOURNAMEFORAPP -TBd postgresql
+
+1.5---- add the to your bundle install file  gem 'pry-rails'
+
+2------ bundle install ---- to install requiered GEMS
+
+3------ rake db:create ---- setup new database
+
+4----- rails g ------ this generate new stuff for rails, like a model
+				rails g model squad name mascot
+					   table name \ attr \ attr
+5----- rake db:migrate
+
+6-----  rails c  to enter the rails concole and start creating database add's
+
+7-----  show-models ----- cna check you tables etc.
+
+8-----  s = Student.new
+9-----	s.first_name="Nick"
+	s.last_name="Marazzo"
+
+s=Student.find(2); to assign somehting in your db to a varible ot use later
+
+	 
+
+---------------------
+
+
+
+
+
+
+/////command line to create a new rails app///////
+
+	(C)reate (R)ead (U)pdate (D)elete;
+
+	(M)odel	(V)iew	(C)ontroller;
+	 |  	 | 	 |
+         |       |       |
+         |       |       |
+         |       |       |
+	 V	 |	 V
+   --- just ---  |     ---- The brains behind the operation
+     the DATA	 |     ---- 
+		 V	
+  ---- the presentation of the data ---- 	  
+
+------------------------------
+|			     |
+|	    USERS	     |
+|			     |
+|    request \ / response    |
+|  	      V   pattern    |
+|	      |	 	     |
+|	     (C)ontroller    |
+|	     / \ 	     |
+|	   (M)  (V)iews	     |
+|	  MODEL		     |		     
+|			     |
+------------------------------
+
+
+
+
+MVC 		- Model View Controller
+		  a design pattern for code structure
+		  seperation of concerns (SoC);
+	
+	Model's ---- job is to just deal with data, communitation to the database
+	
+DRY 		- Don't Repeat Yourself
+
+Rake 		- 
+
+Bundle		-
+
+ORM		- Object realatioship Mapper
+-------	Sit's atop the database in between the server, so we don't have to write SQL, and allows us to write in our choosen code
+
+render		-
+
+validation	- a check to make sure that a the field requirments are ment
+			ENTER THIS INTO 
+
+to view and send erros to the users ---- s.errors.full_messages
+
+----------------------
+	RAILS CONSOLE
+show-models 	-----	to view created models
+s = Squad.new	-----	to create a new Squad
+s.save 		-----	to save anythign you;ve inserted
+	SELECT "squads".* FROM "squads"
+----------------------
+
+Gemfile		- A library for methods
+
+rails S		- S for Server
+
+rails C		- opens rails console in terminal
+
+rails new 	-	
+
+rails G		-G for generate, specify somehting like |rails g model squad name mascot
+
+redirect	-
+
+association	-
+
+----------------------
+
+Model		-
+
+REST		-
+
+RESTful		-
+routing
+
+Migration	-
+
+Controller	-
+
+Resource	-
+
+Route		-
+
+erb		-
+
+ActiveRecord	-
+
+----------------------
+	
+
+
+
+
+learnCRUD
+
+1 model, author with a name
+
+
+rails forces us to call out the only parameters that we want, i.e White Listing params
+------------------------------------------
+private
+  def author_params
+    params.require(:author).permit(:name)
+  end
+------------------------------------------
+

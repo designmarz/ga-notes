@@ -1,0 +1,40 @@
+NOTES 2-18-15
+
+________________________
+attr_reader :foo ====
+def foo
+  @foo
+end
+________________________
+attr_accessor :bar ====
+def bar
+  @bar
+end
+def bar = val
+  @bar = val
+end
+________________________
+
+
+ORM - Object-relation mapping
+
+SINATRA
+    \ \
+     \/
+      ActiveRecord
+	  __|__
+_________/     \_________
+|	|	|	|
+|	|	|	|
+|	|	|	|
+|_______|	|_______|
+    db 		   ORM
+maintenance
+
+
+----- ActiveRecord::Base -----
+
+
+
+
+RAKE ????

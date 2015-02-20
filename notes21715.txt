@@ -1,0 +1,98 @@
+2-17-15 Notes:
+	Better Code with OOP
+
+Model 	----> deal with the HTML & database
+View	----> maintain state
+Controller -> deals with connecting the MODEL & VIEW together
+
+need a models directory
+need to require in header of app.rb
+
+----->	require_relative './models/someModel' -----> no need for the file extension
+
+i.e. root/models/someModel.rb
+
+Class Methods:
+
+define as a class, which is a template for a somethign Model.
+
+	class Squad	----->
+		def self.conn= connection -----> a setter method, required for @conn to pick up connection
+			@conn = connection
+		def self.all -----> 
+	squads = []
+		
+		@conn.exec("SELECT * FROM squads")
+		end
+	end
+
+
+
+
+----->----->----->----->----->
+
+class Greater
+  def.self.greet
+    "Hellow World, #{@name}"
+   end
+
+  def.self.name- name
+	@name = name
+  end
+end
+
+
+Greeter.greet -----> would output
+"Hello World, "
+
+Greeter.name = "Nick" -----> assigns the def.self.name to "Nick"
+
+Gretter.greet -----> now outputs
+
+"Hello World, Nick"
+
+----->----->----->----->----->
+
+
+
+				  squad
+				---------
+		-------------->	|	|
+      def self.conn= connection	| @conn	|
+		-------------->	|	|
+				---------
+
+
+
+
+
+
+
+CLASS Constructor in RUBY:
+	        <this is ruby's keyword>	
+			^
+    class Student	
+	def initialize first, last
+		@first = first
+		@last - last
+	end
+
+	def first
+		@first
+	end
+	
+	def last
+		@last
+	end
+	
+	def first= first
+		@first = first
+	end
+
+	def last= last
+		@last = last
+	end
+end
+
+
+
