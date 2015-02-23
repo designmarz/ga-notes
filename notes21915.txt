@@ -37,11 +37,21 @@ RAILS SETUP
 4----- rails g ------ this generate new stuff for rails, like a model
 				rails g model squad name mascot
 					   table name \ attr \ attr
+rails g model author first_name last_name age
+rails g model post title body category author_id
+
+
 5----- rake db:migrate
 
 6-----  rails c  to enter the rails concole and start creating database add's
 
 7-----  show-models ----- cna check you tables etc.
+
+NEED TO GENRATE CONTROLLS AND VIEWS i.e.:
+
+rails g controller foo new index view edit
+
+
 
 8-----  s = Student.new
 9-----	s.first_name="Nick"
