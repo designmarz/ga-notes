@@ -1,0 +1,91 @@
+Notes 2-23-15
+
+
+1:1			1:MANY			MANY:MANY
+1 Person > 1 SSI	1 Author > M Books	M Post > M Catagories
+1 Mountain > 1 Height	1 Animal > M Attr	M Shirts > M Colors
+
+
+For a Many to Many DB you have a third table
+a join table that stores our foriegn keys to link
+many things to many other things
+
+TABLES:
+____________	___________________	_____________
+|Characters| =>	|Character_Episods| =>	|  Episods  |
+|          | <=	|		  | <=	|	    |
+|__________|	|_________________|	|___________|
+
+MODELS:
+
+EPISODE.rb
+has_many :character_episodes
+----------------------------
+CHARACTEREPISODE.rb
+belongs_to :episode
+belonfd_to :charater
+---------------------------
+CHARATER.rb
+has_many :episodes,
+  through:character_episodes
+___________________________
+
+by adding a through command we can by-pass the join table and look at recoprds that way
+
+
+New many to many app:
+
+1.	rails new firstm2m -TBd postgresql
+	launch new rails app generator
+
+2.	bundle install- ad pry-rails
+	add the need gem's that are nto in defualt
+
+3.	rake db:create
+	create a new database
+
+4.	firstm2m  rails g model character name
+	create models
+
+5.	rails g model episode title
+	create models
+
+6.	rails g model CharacterEpisode character_id:integer episode_id:integer
+	creating the join table
+
+7.	rake db:migrate
+
+8.	subl . to start workign on models
+
+9.
+
+EXAMPLES OF YOUR RB FILES
+-------------------------------------------
+# character.rb
+class Character < ActiveRecord::Base
+  has_many :character_episodes
+  has_many :episodes, through: :character_episodes
+end
+-------------------------------------------
+#episode.rb
+class Episode < ActiveRecord::Base
+  has_manymode :character_episodes
+  has_many :characters, through: :character_episodes
+end
+-------------------------------------------
+#character_episode.rb
+class CharacterEpisode < ActiveRecord::Base
+belongs_to :character
+belongs_to :episode
+end
+-------------------------------------------
+
+
+
+
+
+
+
+
+
+
