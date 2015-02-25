@@ -1,0 +1,61 @@
+NOTES 2-24-15
+Authentication:
+
+	Sessions:
+		storing your users session & activity
+		Usage of cookies(browser based);
+		session(server side based); 
+		A session in rails is sort of like a hash
+	session[:user] = "me"
+	set the data on the server, and send to the clientside cookie	
+	If the sever goes down the cookie with persist and still be around if the sevrer goes down
+	
+everythign you set in a session with be cause a encrypted (seesion)cookie to be set in the browser
+
+WHEN YOU SUBMIT SOMETHING AS A GET REQUEST THE INFORMATION IS VISIBLE IN THE URL - unencrypted in the nav bar
+
+When we log out we want to DESTROY the session cookie
+
+1. TODO APP
+	rails new todosession -TBd postgresql
+	rake db:create
+	bundle
+	rails g controller todos index	
+			at a root route >>> index
+		
+
+
+	Auth:
+		NEVER STORE PASSWORD IN PLAIN TEXT
+		using bcrypt gem, based on Blowfish cipher
+rails new iCanHasPassword -TBd postgresql
+Installing bcrypt / uncomment in gem file, add pry-rails
+rake db:create
+ rails g model user username password password_digest
+		ADD TO MODEL - has_secure_password
+
+user = User.new(username: 'Nick', password: '')
+
+user.save (false has no password)
+
+user.password = 'testingPassword'
+
+user.authenticate('testingPassword') (returns the user if true or FALSE if the password is wronge);
+
+at this point your woudl store somethign in your session.user to indicate that they are logined
+The user user_id is 'best'??
+
+
+after setting up routes etc.
+
+add gem'simple form' and re-bundle
+
+create controller for simple form:
+	rails g simple_form:install
+then add /code to sign.html.erb   /code
+
+
+
+
+
+	Simple FORM
