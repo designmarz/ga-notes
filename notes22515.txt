@@ -1,0 +1,85 @@
+NOTES 2-25-15
+
+FLASH HASH
+flash.
+
+
+Using falsh.now[:sample] = "some string alert"
+when using /\ render :sample /\ instead of a redicrect
+
+
+
+
+EXAMPLE OF HOW TO LOOP OVER AND STYLE FLASHES
+---------------------------------------------
+<% flash.each do |key, value| %>
+  <% if key == "notice" %>
+    <%= content_tag :div, value, class: "text-center alert alert-warning" %>
+  <% elsif key == "alert" %>
+    <%= content_tag :div, value, class: "text-center alert alert-danger" %>
+  <% else %>
+    <%= content_tag :div, value, class: "text-center alert alert-success" %>
+  <% end %>
+<% end %>
+---------------------------------------------
+
+
+poloymorphic assocciation
+				________________________________________
+				|					|
+|---------------|	|---------------|	|---------------|	|
+|		|	|  		|	|		|	|
+|		|	|		|	|		|	|
+|  1. OIL	|	|   1. Coffee	|	|  1. Water	|	|
+|		|	|		|	|		|	|
+|  2. Videos	|	|   2. MP3's	|	|  2. Podcast	|	|
+|		|	|		|	|		|	|
+|---------------|	|---------------|	|---------------|	|
+    |	|			|		   |    |		|
+    |	|-----------------------+------------------+	|---------------|
+    |				|			|
+    V				V			V
+|---------------|       |---------------|       |---------------|
+|               |       |               |       |               |
+|   	        |       |               |       |               |
+|      	        |       | 1. Liquid     |       | 1. Drinkable  |
+|               |       |               |       |               |
+|   2. VIDEO    |       | 2. Rate-able  |       | 2. AUDIO ONLY |
+|               |       |               |       |               |
+|---------------|       |---------------|       |---------------|
+
+______________________________________________________________________
+
+Git Branches 
+
++ is a commit:
+	
+				MY REPO
+      SOME REPO			FORK
+	/    \			
+MASTER		ALT		|
+BRANCH        BRANCH		|
+  +-------------+---------------+
+  |		|		|
+  |		|		|
+  |		|		+ clone local Dev machine
+  |		|	
+  |		|
+  +		+
+  |
+  |
+  |
+  +
+  |
+  |
+  |
+  +
+
+git pull wdi polymorphic
+
+git fetch wdi polymorphic
+
+git checkout polymorphic
+
+
+
