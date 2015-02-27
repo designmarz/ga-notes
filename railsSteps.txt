@@ -1,0 +1,8 @@
+rails new YourAppNameHere -TBd postrgesql
+CD into directory
+subl . 
+
+add needed GEM's i.e.('pry-rails', css frameworks)
+ and bundle install
+
+
