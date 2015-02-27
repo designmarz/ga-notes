@@ -1,0 +1,11 @@
+How to pull updates made by another team member
+
+pull before you push new code...
+git pull will attempt to take code form the remote, and merge with my existing code
+
+git pull = git fetch (soft pull) + git merge
+
+git diff master origin/master
+
+
+
