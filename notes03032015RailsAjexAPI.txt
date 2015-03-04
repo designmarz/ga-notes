@@ -1,0 +1,39 @@
+Rails & AJAX
+
+	Useage of typhoeus make HTTP request with JSON
+
+
+_________________________________________________________________
+AJAX = asynchronous JavaScript and XML
+	requesting and setting data without 
+	refreshing the page.
+	MOST of the time it now returns JSON not XML
+
+Examples: 	Facebook loading new posts wihtout reloading
+		Tracking the current posistion ISS over the earth
+		
+_________________________________________________________________
+JSON = JavaScript Object Notation
+
+_________________________________________________________________
+API = application programing interface
+	Set of protocols to interact with another program or database
+
+"speaking the language" of the other program to get there data
+
+
+AJAX gets JSON though an API
+
+AJAX requests JSON(user data) from the TWITTER API
+
+
+
+gem "typhoeus"
+
+Typhoeus Library:
+	This allows our Rails server to talk to other servers, 
+Using AJAX?
+
+helps our rails server request data
+
+ 
