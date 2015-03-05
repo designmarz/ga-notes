@@ -1,0 +1,26 @@
+1. rails new ./ -TBd postgresql        ----- creats new rails app within the current directory
+	ga . & gc to add and commit this initial app 
+2. adding Rspec   add gem 'rspec-rails', '~> 3.0' to the bundle gem file
+
+bundle install
+
+3. rails generate rspec:install (to install rspec)
+
+4. bundle exec rspec (to run a blank test to check that rspec is up and running)
+
+5. add gem capybara!
+	bundle install
+	add require 'capybara/rails' to your rails_helper.rb file
+
+6. mkdir spec/features (to make a features directory in the spec folder)
+7. touch spec/features/visitor_checks_the_weather_spec.rb (to create a new test file, the _spec.rb is very important! rspec needs that to find th espec file"
+
+create a new test and watch it fail
+
+8. add gem 'guard-rspec', require: false to the gem list, rebundle
+
+9.bunlde exec guard
+
+
+	
+	
