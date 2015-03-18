@@ -1,0 +1,109 @@
+Notes for 3-18-15
+
+we installed nodemond (this is like rerun, it detects changes and restarts your server to show your updates);
+
+	Objectives:
+	Explain how asynchronous code works
+	
+	Understand what node + expressJS do
+	---Express is = sinatra for JS
+	---app.get("/", function())-----
+runs JavaScript on the server side 
+	
+	Presistance with Redis
+	
+	CRUD with Node+Redis
+
+Callbacks:
+	events
+	AJAX success/error
+
+
+CONS 
+not great for basic CRUD apps/ monolithic apps
+
+
+STEPS:
+1. Make A root folder
+   --- cd to that folder
+
+2. Touch app.js
+
+3. npm init	
+   --- this makes  package.JSON for listing out dependents
+   -- opens a place to setup your app
+		name: (firstNodeApp)
+		version: (1.0.0) 
+		description: 
+		entry point: (app.js) 
+		etc etct etc etc etc etc etc
+this creates your package.JSON
+----------
+	add .gitignore via touch
+	echo "node_modules" >> .gitignore
+
+this helps with not storign all of your dependcies in git etc...
+
+---------
+
+4. git init / add - A / git commit
+	add .gitignore via touch
+        echo "node_modules" >> .gitignore
+
+5. npm install *NAME* --save
+	have to install express and any others one by one manualy
+	 npm install express --save 
+	 npm install ejs --save (ejs is like rails ERB file type)
+--- 'npm install' will install everything in the package.JSON(like bundle install) 
+
+GENERALLY NEED:
+	express 	- framework
+	ejs 		- templating language
+	Redis 		- none relationship datbase
+	body-parser 	- gives up a body req object -- lets us catch form values
+			we need this to get form values
+	method-override	- so we can put/patch and delete
+
+DON'T FORGET the --save (to push this info to your package.JSON)
+
+
+
+
+6. mkdir views (just like rails/ruby) 
+		cd into views
+
+7. touch index.ejs
+
+
+8. setup app.js with the following
+
+	// sets up express to use in our app
+	var express = require("express"),
+	app = express();
+
+	// Adding middleware
+	// to tell express how to render our views
+	app.set("view engine", "ejs");
+
+
+	app.get("/", function(req, res) {
+		// this defines what is rendered when you go to "/"
+		// no need to use the 'ejs' file extension that is defind above
+	res.render("index");
+		// res.redirect("/")
+		// res.json()
+		// res.status(500)
+	})
+
+9. enter 'nodemon' in terminal/rootOfYourApp to start you node server
+
+10.
+
+using REDIS:
+app.get("/", functionreq(req, res){
+   /redis command/
+client.lrange("todosbar", 0, -1, function(err, todos){
+res.render("index", {todos:todos});
+})}
+
+

@@ -1,0 +1,8 @@
+Data Structures:
+	Common data structures:
+		Arrays
+		linked list
+		Trees
+		Hashes
+
+Linked list are kionda like an array, differnt way of storing etc.
