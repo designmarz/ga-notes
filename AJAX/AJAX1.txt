@@ -1,0 +1,8 @@
+AJAX
+
+Updates data / content withoput page reloading
+Examples:
+	autocomplete
+	user_id uniquness check w/o submit
+
+		

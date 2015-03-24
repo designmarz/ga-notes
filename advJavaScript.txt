@@ -1,0 +1,38 @@
+Advanced Javascript
+
+OOP + Inheritance
+	local/lexical/functional scope
+	using a self invoking anonymous function
+	to encapsulate our code
+
+Inheritance in javascript
+
+	function Vehicle(make, model, year){this.make = make; this.model = model; this.year = year;}
+
+	Vehicle.prototype.honk = function(){alert("Beep!!");}
+function (){alert("Beep!!");}
+
+	function Car(make, model, year){this.make = make; this.model = model; this.year = year;}
+
+	
+
+instead of reapply the this.whatever you can use 
+function Car(make, model, year){
+Vehicle.apply(this, arguments);
+}	
+
+
+	Car.prototype = new Vehicle 
+
+
+Call/Apply
+
+
+recursion + memoization
+
+closures
+
+patterns
+
+
+more....

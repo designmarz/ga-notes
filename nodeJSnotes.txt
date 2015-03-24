@@ -1,0 +1,28 @@
+nodeJS
+
+Fast - writen in C
+non-blocking model
+
+What you cna build:
+	websocket server - chat server
+	Fast file upload client - non blocking 
+	Ad Server - rapid & quick
+	real-time data 
+
+IT is not 
+	a web framework - won't replace rails?
+	for beginners
+
+
+blocking code vs non-blocking code
+
+blocking code:
+	top down, the systeme has to read all data before preceeding
+
+Uses callbacks for when all the data is read it will send the data bakc to the client, other code is executed all the while 
+
+
+
+need to require the http modul
+
+

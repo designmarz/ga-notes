@@ -1,0 +1,20 @@
+GO through and re-write basic JS comma:qnds i.e. map, sort, etc..
+
+re-write underscoreJS commands
+
+
+JSON - parsing text ou tof gobbldygoop
+
+JSON.stringify
+
+
+the prototype is where you store all your class methods(instance)  
+
+
+METHOD is definded on an object, 
+FUNCTION are not attached to an object
+
+
+IN RUBY initialize = new this name matters on def of classes
+
+
