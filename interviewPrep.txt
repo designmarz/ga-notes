@@ -1,0 +1,25 @@
+1. restate problem
+	(state syntax errors lack of tect editor)
+Ask which language to code in,
+ask if you can code in a language you are comfortable in
+
+SPEAK OUT LOUD
+Ask for sample solved data, if possible
+
+
+STATE "DON"T FOCUS ON SYNTAX" the white board is not an editor
+
+2. sudo code first
+	explain general details of thinking
+answer questions along the way
+
+no syntax checking
+
+3.flush out real code
+
+
+
+
+Communitaction is super important
+
+pseido code out adn explain 

@@ -1,0 +1,23 @@
+
+#### javascript ####
+[1,2,3,4].forEach(functiovalue(){
+## do soemthign with the value ##
+});
+
+
+#### RUBY ####
+[1,2,3,4].each do |value|
+## do soemthign with the value ##
+end
+
+
+class Array
+	def my_each
+	end
+end
+
+
+
+
+
+What is the diffrence between 'self' in ruby & 'this' javascript
